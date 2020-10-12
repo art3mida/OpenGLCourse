@@ -1,0 +1,26 @@
+A program that runs on the GPU.
+Two main types of shaders we will be using:
+1. Vertex shaders
+2. Fragment shaders (also known as pixel shaders)
+
+Rendering pipeline:
+- we have some data on the CPU
+- we send some data to GPU
+- we bound certain states
+- we issue a draw call on CPU 
+- vertex shader is called - called for each vertex, the primary purpose is to tell
+                            the GPU where to draw the vertex. Also used to pass
+                            data to the next stage (if there are additional attributes)
+- the fragment shader is called - runs once for each pixel that needs to get rasterized
+                                  (drawn). It fills in the triangle we have just specified.
+                                  It decides output color for our pixels. Lighting needs to 
+                                  be calculated by pixel for example, but we try to keep 
+                                  as little operations here as possible, because it's called
+                                  a lot of times.
+- we see results.
+
+Live shader generation is very common in games, and is usually based on what's 
+currently happening, what kind of graphics settings we've chosen, etc.
+
+Shaders also work like state machine, so when we want to use a shader, we need 
+to enable it.

@@ -1,0 +1,6 @@
+Explanation of why we need to link -lGL when only including glfw.
+Also explains how GLAD plays into this, and how to disable additional
+includes for glfw.
+
+(Including the glfw header)
+https://www.glfw.org/docs/latest/quick.html

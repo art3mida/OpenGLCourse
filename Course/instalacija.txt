@@ -1,0 +1,23 @@
+Install these to get OpenGL working:
+
+sudo apt-get install mesa-common-dev
+
+sudo apt-get install freeglut3
+
+sudo apt-get install freeglut3-dev
+
+The OpenGL files should be in:
+
+/usr/include/GL/
+
+The Terminal (Compiler) reads (e.g. g++) from:
+
+/usr/bin/
+
+Compile like this (you might need to link more libraries, but test this):
+
+g++ filename -lglut -lGL -lGLU
+
+
+ADDITIONAL:
+sudo apt install libglfw3 libglfw3-dev libglfw3-doc libglew-dev

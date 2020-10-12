@@ -1,0 +1,8 @@
+Reasons to have different shader files:
+- You have 1 vertex shader and a bunch of fragment shader 
+- ...
+
+There is no reason to do that in general. So you can just put them all in one
+shader.
+
+DirectX
